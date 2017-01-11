@@ -1,12 +1,10 @@
-import java.awt.Button;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 import javax.swing.JButton;
-import javax.swing.JPanel;
 
-public class ColorButton extends Button implements MouseListener{
+public class ColorButton extends JButton implements MouseListener{
 	
 	String dflt;
 	
@@ -25,13 +23,13 @@ public class ColorButton extends Button implements MouseListener{
 	}
 	public void mouseExited(MouseEvent arg0) {
 		setBackground(Color.CYAN);
-		setLabel(dflt);
+		setText(dflt);
 	}
 	public void mousePressed(MouseEvent arg0) {
-		setLabel("Pressé !");
+		setText("Pressé !");
 	}
 	public void mouseReleased(MouseEvent arg0) {
-		setLabel("Relâché !");
+		setText("Relâché !");
 	}
 	
 }
