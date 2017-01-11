@@ -3,7 +3,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// 404 Not Found Yet
-		exo6();
+		exo3();
 	}
 	
 	public static void exo1(){
