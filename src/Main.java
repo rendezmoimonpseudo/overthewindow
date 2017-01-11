@@ -23,6 +23,6 @@ public class Main {
 	}
 	
 	public static void exo5(){
-		ColorButton cb = new ColorButton("Magic Button");
+		test tst = new test();
 	}
 }

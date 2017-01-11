@@ -7,12 +7,16 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class ColorButton extends Button implements MouseListener{
+	
+	String dflt;
+	
 	public ColorButton(String label){
 	super(label);
 	setBackground(Color.CYAN);
 	this.addMouseListener(this);
+	dflt = label;
 	}
-
+	
 	public void mouseClicked(MouseEvent arg0) {
 		setBackground(Color.YELLOW);
 	}
@@ -21,12 +25,13 @@ public class ColorButton extends Button implements MouseListener{
 	}
 	public void mouseExited(MouseEvent arg0) {
 		setBackground(Color.CYAN);
+		setLabel(dflt);
 	}
 	public void mousePressed(MouseEvent arg0) {
-		System.out.println("Pressé !");
+		setLabel("Pressé !");
 	}
 	public void mouseReleased(MouseEvent arg0) {
-		System.out.println("Relâché !");
+		setLabel("Relâché !");
 	}
 	
 }
