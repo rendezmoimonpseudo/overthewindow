@@ -8,6 +8,7 @@ public class MaFenetre extends JFrame implements MouseListener {
 		super("Une fenetre pour les gouverner tous (les clics souris)");
 		setSize(300, 200);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
 		setVisible(true);
 		
 		//La fenêtre fait appel à son propre écouteur d'événements

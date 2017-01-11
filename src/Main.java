@@ -3,7 +3,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// 404 Not Found Yet
-		exo4();
+		exo5();
 	}
 	
 	public static void exo1(){
@@ -20,5 +20,9 @@ public class Main {
 	
 	public static void exo4(){
 		MaFenetre fen = new MaFenetre();
+	}
+	
+	public static void exo5(){
+		ColorButton cb = new ColorButton("Magic Button");
 	}
 }
