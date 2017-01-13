@@ -25,6 +25,7 @@ public class Calculatrice extends JFrame {
 			but.setForeground(Color.WHITE);
 			but.setBackground(Color.DARK_GRAY);
 			pan2.add(but);
+			but.addActionListener(new CreationValeurs());
 		}
 		
 		JButton point = new JButton(".");
@@ -34,6 +35,14 @@ public class Calculatrice extends JFrame {
 		JButton soust = new JButton("-");
 		JButton multi = new JButton("*");
 		JButton divi = new JButton("/");
+		
+		point.addActionListener(new CreationValeurs());
+		equal.addActionListener(new CreationValeurs());
+		erase.addActionListener(new CreationValeurs());
+		addi.addActionListener(new CreationValeurs());
+		soust.addActionListener(new CreationValeurs());
+		multi.addActionListener(new CreationValeurs());
+		divi.addActionListener(new CreationValeurs());
 		
 		point.setForeground(Color.WHITE);	
 		equal.setForeground(Color.WHITE);
@@ -53,6 +62,7 @@ public class Calculatrice extends JFrame {
 		
 		this.setTitle("Compteratrice");
 		this.setSize(500, 450);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setLocationRelativeTo(null);
 		
 		pan2.setPreferredSize(new Dimension(this.getWidth()-(this.getWidth()/3), this.getHeight()-(this.getHeight()/5)));
@@ -70,7 +80,7 @@ public class Calculatrice extends JFrame {
 		pan3.add(divi);
 
 		pan4.setPreferredSize(new Dimension(this.getWidth(), this.getHeight()/5));
-		pan4.setBackground(Color.GRAY);
+		pan4.setBackground(Color.WHITE);
 		pan4.setLayout(new BorderLayout());
 		pan4.add(lab, BorderLayout.EAST);
 		
@@ -86,6 +96,7 @@ public class Calculatrice extends JFrame {
 
 		class CreationValeurs implements ActionListener{
 			public void actionPerformed(ActionEvent e){
-				
+				String test = ((JButton) (e.getSource())).getText();
+				System.out.println(test);
 			}
 		}

@@ -3,7 +3,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// 404 Not Found Yet
-		exo3();
+		exo7();
 	}
 	
 	public static void exo1(){
@@ -28,5 +28,13 @@ public class Main {
 	
 	public static void exo6(){
 		FenetreClic fc = new FenetreClic();
+	}
+	
+	public static void exo7(){
+		test2 ess = new test2();
+	}
+	
+	public static void exo8(){
+		
 	}
 }
